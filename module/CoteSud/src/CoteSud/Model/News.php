@@ -1,6 +1,6 @@
 <?php
 
- namespace News\Model;
+ namespace CoteSud\Model;
 
  class News
  {

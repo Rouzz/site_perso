@@ -1,6 +1,6 @@
 <?php
 
-namespace News\Controller;
+namespace CoteSud\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
@@ -32,7 +32,7 @@ class NewsController extends AbstractActionController
     {
         if (!$this->newsTable) {
             $sm = $this->getServiceLocator();
-            $this->newsTable = $sm->get('News\Model\NewsTable');
+            $this->newsTable = $sm->get('CoteSud\Model\NewsTable');
         }
         return $this->newsTable;
     }
